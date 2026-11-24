@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JKC Construction | Building Today. Creating Tomorrow.</title>
+    <title> Gallery |JKC Construction.</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,7 +30,60 @@
 
     <main>
 
+         <section class="page-hero">
+                <div class="container">
+                    <h1>Our Projects</h1>
+                    <p>Explore some of the work completed by JKC Construction.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="filters">
+                        <button class="filter active" data-filter="all">All</button>
+                        <button class="filter" data-filter="residential">Residential</button>
+                        <button class="filter" data-filter="commercial">Commercial</button>
+                        <button class="filter" data-filter="renovations">Renovations</button>
+                    </div>
+                    <div class="gallery-grid">
+                        <article class="gallery-item" data-category="residential">
+                            <img src="content/wendy.jpg" alt="Wendy House">
+                            <div class="gallery-info">
+                                <strong>Wendy House</strong>
+                                <span>Residential</span>
+                            </div>
+                        </article>
+                        <article class="gallery-item" data-category="residential">
+                            <img src="content/carport.jpg" alt="Carport">
+                            <div class="gallery-info">
+                                <strong>Carport</strong>
+                                <span>Residential</span>
+                            </div>
+                        </article>
+                        <article class="gallery-item" data-category="renovations">
+                            <img src="content/garage.jpg" alt="Garage Door">
+                            <div class="gallery-info">
+                                <strong>Garage Door</strong>
+                                <span>Renovations</span>
+                            </div>
+                        </article>
+                        <article class="gallery-item" data-category="renovations">
+                            <img src="content/store room.jpg" alt="Store Room">
+                            <div class="gallery-info">
+                                <strong>Store Room</strong>
+                                <span>Renovations</span>
+                            </div>
+                        </article>
+                       
+                    </div>
+                </div>
+            </section>
+
     </main>
+
+    <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img src="" alt="Project preview">
+        </div>
 
      <footer>
         <div class="container">
@@ -63,4 +116,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>

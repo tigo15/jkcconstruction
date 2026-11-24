@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>About Us | JKC Construction</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Add to Gallery | JKC Construction</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -28,7 +28,88 @@
         </div>
     </header>
 
+    <main>
+         <section class="add-gallery-section">
+            <div class="container">
+                <div class="gallery-form">
+                    <h2>Add a Project to the Gallery</h2>
+                    <p>
+                        Add photos and details about a JKC Construction
+                        project.
+                    </p>
+
+                    <form id="galleryForm">
+                        <div class="gallery-field">
+                            <label for="projectTitle">Project Title *</label>
+                            <input
+                                type="text"
+                                id="projectTitle"
+                                required
+                                placeholder="e.g. Residential Renovation">
+                        </div>
+
+                        <div class="gallery-field">
+                            <label for="category">Project Category *</label>
+                            <select id="category" required>
+                                <option value="">Select a category</option>
+                                <option value="Residential">Residential</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Renovation">Renovation</option>
+                                <option value="Touch-Ups">Touch-Ups</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="gallery-field">
+                            <label for="description">Project Description</label>
+                            <textarea
+                                id="description"
+                                placeholder="Describe the work completed...">
+                            </textarea>
+                        </div>
+
+                        <div class="gallery-field">
+                          <label for="projectImages">Upload Project Photos</label>
+                            <input
+                               type="file"
+                                id="projectImages"
+                                accept="image/*"
+                                multiple>
+                        </div>
+
+                        <div class="gallery-field">
+                            <label for="projectVideos">Upload Project Videos</label>
+                              <input
+                                type="file"
+                                id="projectVideos"
+                                accept="video/mp4,video/webm,video/ogg"
+                                multiple>
+                        </div>
+
+                        <div class="gallery-field">
+                            <label>Media Preview</label>
+                            <div id="mediaPreview" class="image-preview"></div>
+                        </div>
+
+                        <button class="gallery-submit" type="submit">
+                            Add to Gallery
+                        </button>
+
+                        <div
+                            id="formMessage"
+                            class="form-message"
+                            role="status"
+                            aria-live="polite">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     </body>
+
+    
 
 
         <footer>
@@ -61,4 +142,7 @@
                  © 2026 JKC Construction. All rights reserved.
             </div>
         </div>
+
+        <script src="script.js"></script>
+
     </footer>
